@@ -1,0 +1,15 @@
+import math
+
+# Solicita a base e o logaritmando ao usuário
+base = float(input("Digite a base do logaritmo: "))
+logaritmando = float(input("Digite o logaritmando: "))
+
+# Verifica se a base e o logaritmando são válidos
+if base <= 0 or base == 1 or logaritmando <= 0:
+  print("Base e logaritmando devem ser maiores que zero e a base diferente de 1.")
+else:
+  # Calcula o logaritmo
+  resultado = math.log(logaritmando, base)
+
+  # Apresenta o resultado
+  print(f"O logaritmo de {logaritmando} na base {base} é: {resultado}")
